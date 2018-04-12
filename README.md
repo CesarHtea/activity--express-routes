@@ -47,11 +47,58 @@ GET     /api/students/{id}
 POST    /api/students
 ```
 
+```js
+# Courses
+
+[{
+  id: 1,
+  name: "Introduction to JavaScript",
+  length: "15 hours"
+}, {
+  id: 2,
+  name: "React.js Fundamentals",
+  length: "25 hours"
+}]
+```
+
+```js
+# Instructors
+
+[{
+  id: 1,
+  name: "Mr R"
+}, {
+  id: 2,
+  name: "Tyler"
+}, {
+  id: 3,
+  name: "John Die"
+}]
+```
+
+```js
+# Students
+
+[{
+  id: 1,
+  name: "Damian Allende"
+}, {
+  id: 2,
+  name: "Cesar Hernandez"
+}, {
+  id: 3,
+  name: "Ingrid Garcia"
+}, {
+  id: 4,
+  name: "Maribel Navia"
+}]
+```
+
 ###### Hint 1: For DELETE and PUT requests, you can play responding with a message like: "Making a DELETE/PUT request on {course/instructor/students} endpoint with id: «value»"
 
 ###### Hint 2: For GET requests, return all data and filter if it’s necessary (GET individual endpoints)
 
-##### (5) Configure in `server.js` the `apiRouter` file
+##### (5) Configure in `app.js`  the `apiRouter` file
 
 **Test all routes using Postman.**
 
